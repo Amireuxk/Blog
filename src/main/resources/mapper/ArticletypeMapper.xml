@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ykai.blog.mapper.ArticletypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.ykai.blog.entity.Articletype">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="articletypeName" column="articleType_name" jdbcType="VARCHAR"/>
+            <result property="articletypeInfo" column="articleType_info" jdbcType="VARCHAR"/>
+            <result property="isdelete" column="isDelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,articleType_name,articleType_info,
+        isDelete
+    </sql>
+</mapper>

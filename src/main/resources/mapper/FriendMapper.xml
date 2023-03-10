@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ykai.blog.mapper.FriendMapper">
+
+    <resultMap id="BaseResultMap" type="com.ykai.blog.entity.Friend">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="friendMasterid" column="friend_masterID" jdbcType="INTEGER"/>
+            <result property="friendFriendid" column="friend_friendID" jdbcType="INTEGER"/>
+            <result property="friendRename" column="friend_reName" jdbcType="VARCHAR"/>
+            <result property="isdelete" column="isDelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,friend_masterID,friend_friendID,
+        friend_reName,isDelete
+    </sql>
+</mapper>

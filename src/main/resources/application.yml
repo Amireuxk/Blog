@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: prod
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

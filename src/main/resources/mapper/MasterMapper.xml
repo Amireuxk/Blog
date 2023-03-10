@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ykai.blog.mapper.MasterMapper">
+
+    <resultMap id="BaseResultMap" type="com.ykai.blog.entity.Master">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="masterName" column="master_name" jdbcType="VARCHAR"/>
+            <result property="masterPassword" column="master_password" jdbcType="VARCHAR"/>
+            <result property="masterOicq" column="master_oicq" jdbcType="VARCHAR"/>
+            <result property="masterSex" column="master_sex" jdbcType="INTEGER"/>
+            <result property="isdelete" column="isDelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,master_name,master_password,
+        master_oicq,master_sex,isDelete
+    </sql>
+</mapper>
